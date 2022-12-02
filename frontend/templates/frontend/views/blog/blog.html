@@ -1,0 +1,126 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n%}
+{% block title%}{%translate "Dev Tips" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "Dev Tips" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a href="{% url 'home' %}">{% translate "Home" %}</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="{% url 'blog' %}">{% translate "Dev Tips" %}</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="saasbox-blog-area">
+    <div class="container">
+        <div class="row justify-content-center justify-content-lg-between g-md-5">
+            <div class="col-12 col-md-7">
+                <div class="row g-4 g-lg-5 justify-content-center">
+                    {% for article in object_list %}
+                    <div class="col-12 col-sm-10 col-md-12">
+                        <div class="card blog-card border-0">
+                            <a class="image-wrap d-block" href="{{article.get_absolute_url}}"><img
+                                    src="{{article.feature_image.url}}" alt="{{article.title}}" /></a>
+                            <div class="card-body px-4 pb-0">
+                                {% for cat in article.category.all %}
+                                <a class="badge bg-primary text-white mb-1" href="blog-1.html">
+                                    {{cat}}
+                                </a>
+                                {% endfor %}
+                                <a class="post-title d-block mb-3" href="blog-1.html">{{article.title}}</a>
+                                <div class="post-meta">
+                                    <span class="text-muted fz-14"><i
+                                            class="bi bi-clock me-2"></i>{{article.published|timesince}}
+                                        {% translate "read" %}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %} 
+                    {% translate "Sorry there is no articles to read" %} 
+                    {% endfor %}
+                </div>
+                <div class="saasbox-pagination-area my-5 mb-lg-0">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center mb-0">
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">-</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-5 col-lg-4">
+                <div class="blog-sidebar-area">
+                    <div class="single-widget-area mb-4 mb-lg-5">
+                        <h5 class="widget-title mb-30">{% translate "Categories" %}</h5>
+                        <ul class="catagories-list ps-0 list-unstyled">
+                            {% for cat in cat_list %}
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-caret-right"></i>{{cat.name}}<span
+                                        class="text-muted ms-2">(9)</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="single-widget-area mb-4 mb-lg-5">
+                        <h4 class="widget-title mb-30">{% translate "Recent Posts" %}</h4>
+                        {% for article in articles_list %}
+                        <div class="single-recent-post d-flex align-items-center">
+                            <div class="post-thumb">
+                                <a class="rounded" href="#"><img class="rounded" src="{{article.feature_image.url}}"
+                                        alt="{{article.title}}" /></a>
+                            </div>
+                            <div class="post-content">
+                                <a class="post-title" href="#">{{article.title}}</a>
+                                <p class="post-date">{{article.published|date:"M d, Y"}}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="single-widget-area">
+                        <h4 class="widget-title mb-30">{% translate "Popular Tags" %}</h4>
+                        <ul class="popular-tags clearfix ps-0 mb-0">
+                            <li><a href="#">saasbox</a></li>
+                            <li><a href="#">npm</a></li>
+                            <li><a href="#">sass</a></li>
+                            <li><a href="#">pug</a></li>
+                            <li><a href="#">gulp</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">bootstrap</a></li>
+                            <li><a href="#">html5</a></li>
+                            <li><a href="#">jquery</a></li>
+                            <li><a href="#">design</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+
+{% endblock content %}

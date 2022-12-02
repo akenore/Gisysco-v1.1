@@ -1,0 +1,111 @@
+{% extends 'base/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Profile" %}{% endblock title %}
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <hr class="mb-6 mx-4 w-70 h-1 bg-gray-300 rounded border-0 md:my-10 dark:bg-gray-300">
+
+    <div class="grid col-1 mx-auto max-w-7xl gap-6 mb-6 md:grid-cols-1 lg:grid-cols-2 md:mt-10">
+
+        <div class="justify-center p-2 md:p-4">
+            <label for="id_first_name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {{user_form.first_name.label}}
+            </label>
+            {{user_form.first_name}}
+            {% for error in user_form.first_name.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_last_name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "Last Name: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{user_form.last_name}}</div>
+            {% for error in user_form.last_name.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_email" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "Email address: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{user_form.email}}</div>
+            {% for error in user_form.email.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_company_name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "Company Name: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.company_name}}</div>
+            {% for error in info_form.company_name.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_domaine" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "Domain: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.domaine}}</div>
+            {% for error in info_form.domaine.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_company_vat" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "VAT: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.company_vat}}</div>
+            {% for error in info_form.company_vat.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="order-2 lg:order-3 justify-center p-2 md:p-4">
+            <label for="id_whatsapp" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">
+                {% translate "WhatsApp: " %}
+            </label>
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.whatsapp}}</div>
+            {% for error in info_form.whatsapp.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="hidden order-2 lg:order-3 justify-center p-2 md:p-4">
+            
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.validated_client}}</div>
+            {% for error in info_form.validated_client.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+        <div class="hidden order-2 lg:order-3 justify-center p-2 md:p-4">
+            
+            <div class="mx-auto text-gray-800 dark:text-gray-300  ">{{info_form.accepted_terms}}</div>
+            {% for error in info_form.accepted_terms.errors %}
+            <p><small class="text-sm text-red-700 dark:text-red-500">{{ error }}</small></p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="mx-auto max-w-7xl">
+        <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+
+            {% if object %}
+            {% translate "Update" %}
+            {% else %}
+            {% translate "Publish" %}
+            {% endif %}
+
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+</form>
+{% endblock content %}

@@ -1,0 +1,60 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<h1 class="block mb-5 text-xl font-bold text-gray-900 dark:text-gray-300">{% trans "Sign Up" %}</h1>
+{% if form.errors %}
+      {% for field in form %}
+          {% for error in field.errors %}
+              <div class="p-3 mb-3 text-sm text-red-600 rounded-lg dark:text-red-800">
+                  <strong>{{ error|escape }}</strong>
+              </div>
+          {% endfor %}
+      {% endfor %}
+      {% for error in form.non_field_errors %}
+          <div class="p-4 mb-4 text-sm text-red-700 rounded-lg dark:text-red-800">
+            <strong>{{ error|escape }}</strong>
+          </div>
+      {% endfor %}
+    {% endif %}
+
+<p class="block mb-5 text-md font-medium text-gray-900 dark:text-gray-300">{% blocktrans %}Already have an account? Then
+  please <a href="{{ login_url }}"
+    class="inline-flex items-center font-medium text-blue-600  dark:text-blue-500 hover:underline">sign
+    in</a>{% endblocktrans %}</p>
+
+<form class="signup space-y-4 md:space-y-6" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  <div class="mb-6">
+    <label for="id_username"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">{{form.username.label}}</label>
+    {{form.username}}
+  </div>
+  <div class="mb-6">
+    <label for="id_email"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{form.email.label}}</label>
+    {{form.email}}
+  </div>
+  <div class="mb-6">
+    <label for="id_password1"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{form.password1.label}}</label>
+    {{form.password1}}
+  </div>
+  <div class="mb-6">
+    <label for="id_password2"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{form.password2.label}}</label>
+    {{form.password2}}
+  </div>
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit"
+    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign
+    up</button>
+
+</form>
+
+{% endblock %}

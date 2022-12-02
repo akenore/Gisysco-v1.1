@@ -1,0 +1,96 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "SEO" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "SEO" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% translate "Home" %}</a></li>
+                            <li class="breadcrumb-item" aria-current="page">{% translate "SEO" %}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="portfolio-details-area portfolio-content">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="saasbox-tab-area mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tab--area">
+                                <div class="tab-content" id="saasboxTabContent">
+                                    <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                                        aria-labelledby="tab--1">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-12 col-sm-9 col-md-6">
+                                                <div class="tab-thumb mt-5"><img
+                                                        src="{% static 'frontend/img/core-img/seo-1.svg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-9 col-md-6">
+                                                <div class="tab--text mt-4 mt-lg-5">
+                                                    <h2 class="mb-3">{% translate "What does SEO mean?" %}</h2>
+                                                    <p>{% translate "In today's rapidly evolving digital environment, the correct digital marketing services solutions may propel your company to new heights. With our SEO administrations, we help you realize the maximum level of Google." %}
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="saasbox-tab-area mb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab--area">
+                                    <div class="tab-content" id="saasboxTabContent">
+                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                                            aria-labelledby="tab--1">
+                                            <div class="row align-items-center justify-content-center">
+
+                                                <div class="col-12 col-sm-9 col-md-6">
+                                                    <div class="tab--text mt-5 pt-5">
+                                                        <h2 class="mb-3">{% translate "Why SEO?" %}</h2>
+                                                        <p>{% translate "Search Engine Optimization (SEO) is the most effective way to attract unique customers, which will increase your sales and ROI. Simply said, we raise your brand's visibility organically on Google and other search engines." %}
+                                                        </p>
+                                                        <p>{% translate "Allows your site to appear among the first results of search engines to increase the visibility of the site when searching for an Internet user." %}
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-9 col-md-6">
+                                                    <div class="tab-thumb mt-5 ms-lg-5"><img
+                                                            src="{% static 'frontend/img/core-img/seo-2.svg' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-120 d-block"></div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

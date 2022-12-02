@@ -1,0 +1,166 @@
+{% load static i18n %}
+{% comment %} {% get_current_language as language_code %} {% endcomment %}
+
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-5">
+                <div class="footer-widget-area">
+                    <a class="d-block mb-4" href="{% url 'home' %}"><img
+                            src="{% static 'frontend/img/core-img/logo@x2.png' %}" alt="Gisysco logo"
+                            style="max-width: 200px" /></a>
+                    <p>
+                        {% blocktranslate %} We share a passion for design, technology and communication.
+                        Our focus allows us to combine these passions to create competitive solutions.
+                        We follow proven processes to achieve the highest levels of clarity and
+                        clarity and distinction in our work. {% endblocktranslate %}
+                    </p>
+                    <div class="newsletter-form mb-4 col-md-8">
+                        <form class="d-flex align-items-stretch" action="#">
+                            <input class="form-control rounded-0 rounded-start" type="email"
+                                placeholder="Enter email" />
+                            <button class="btn btn-warning rounded-0 rounded-end px-3" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <div class="footer-widget-area">
+                    <h5 class="mb-4">{% translate "Quick Links" %}</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="{% url 'home' %}">
+                                <i class="bi bi-caret-right"></i>{% translate "Home" %}
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="{% url 'articles' %}"><i class="bi bi-caret-right"></i>{% translate "Dev Tips" %}</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">
+                                <i class="bi bi-caret-right"></i>{% translate "Contact Us" %}</a>
+                        </li>
+                        <li>
+                            <a href=""><i
+                                    class="bi bi-caret-right"></i>{% translate "My Space" %}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <div class="footer-widget-area">
+                    <h5 class="mb-4">{% translate "What we do" %}</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="{% url 'design' %}"><i
+                                    class="bi bi-caret-right"></i>{% translate "Design & Branding" %}</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'web' %}"><i
+                                    class="bi bi-caret-right"></i>{% translate "Web Development" %}</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'mobile' %}"><i
+                                    class="bi bi-caret-right"></i>{% translate "Mobile Development" %}</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'seo' %}"><i class="bi bi-caret-right"></i>{% translate "SEO" %}</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'marketing' %}"><i
+                                    class="bi bi-caret-right"></i>{% translate "Digital Marketing"%}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-widget-area">
+                    <h5 class="mb-4">{% translate "Contact Us" %}</h5>
+                    <div class="contact-mini-card">
+                        <div class="contact-mini-card-icon"><i class="bi bi-envelope"></i></div>
+                        <p>it-service@gisysco.com</p>
+                    </div>
+                    <div class="contact-mini-card">
+                        <div class="contact-mini-card-icon"><i class="bi bi-envelope"></i></div>
+                        <p>marketing@gisysco.com</p>
+                    </div>
+                    <div class="footer-social-icon d-flex align-items-center mt-3">
+                        <a href="https://www.facebook.com/gisysco.agency/" target="_blank" rel="noreferrer"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Facbook"><i class="bi bi-facebook"
+                                style="font-size: 23px"></i>
+                        </a>
+                        <a href="https://twitter.com/Gisysco" target="_blank" rel="noreferrer" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Twitter"><i class="bi bi-twitter"
+                                style="font-size: 23px"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gisysco/" target="_blank" rel="noreferrer"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i
+                                class="bi bi-instagram" style="font-size: 23px"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/gisysco" target="_blank" rel="noreferrer"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"><i class="bi bi-linkedin"
+                                style="font-size: 23px"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copywrite-wrapper mt-5 rounded d-lg-flex align-items-lg-center justify-content-lg-between">
+            <div class="copywrite-text text-center text-lg-start mb-3 mb-lg-0 me-lg-4">
+                <p class="mb-0">
+                    {% translate "2023 &copy; All rights reserved by" %}
+                    <a href="{% url 'home' %}">Gisysco</a> 
+                </p>
+            </div>
+            <div class="footer-nav mb-3 mb-lg-0 me-lg-4">
+                <ul class="mb-0 d-flex flex-wrap justify-content-center list-unstyled">
+                    <li><a
+                            href="{% if request.is_secure %}https://{% else %}http://{% endif %}{{ request.get_host }}/privacy-policy/">{% translate "Privacy Policy" %}</a>
+                    </li>
+                    <li><a
+                            href="{% if request.is_secure %}https://{% else %}http://{% endif %}{{ request.get_host }}/terms-conditions/">{% translate "Terms & Conditions" %}</a>
+                    </li>
+                    <li><a href="{% url 'dashboard' %}">{% translate "Get Support" %}</a></li>
+                </ul>
+            </div>
+            <div class="language-dropdown text-center text-lg-end">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {% translate "Language" %}
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="#">
+                        <span class="me-2 flag-icon flag-icon-us"></span>{% translate "English" %}
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="me-2 flag-icon flag-icon-es"></span>{% translate "Spanish" %}
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="me-2 flag-icon flag-icon-fr"></span>{% translate "Frensh" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <strong class="float-end">v1.1</strong>
+    </div>
+</footer>
+<div id="scrollTopButton"><i class="bi bi-arrow-up-short"></i></div>
+<div class="mb-70 d-block"></div>
+<div class="cookiealert">
+    <p>
+        {% blocktranslate %} This site uses cookies. We use cookies to ensure you get the best experience
+        on our website. For details, please check our {% endblocktranslate %}
+        <a href="{% if request.is_secure %}https://{% else %}http://{% endif %}{{ request.get_host }}/privacy-policy/">
+            {% translate "Privacy Policy." %}</a>
+    </p>
+    <button class="btn btn-primary btn-sm acceptcookies" type="button" aria-label="Close">
+        {% translate "I agree & Close" %}
+    </button>
+</div>

@@ -1,0 +1,172 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Mobile Development" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "Mobile Development" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a href="{% url 'home' %}">{% translate "Home" %}</a>
+                            </li>
+                            <li class="breadcrumb-item" aria-current="page">
+                                {% translate "Mobile Development" %}
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+
+<div class="saasbox-tab-area mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab--area">
+                    <div class="tab-content" id="saasboxTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h2 class="mb-3">
+                                            {% translate "Do you agree with us that smartphones have become a daily necessities?" %}
+                                        </h2>
+                                        <p>
+                                            {% translate "You may take use of this service from our team, who develop mobile and tablet applications. They are knowledgeable with the most recent developments in the field of iOS and Android devices." %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5">
+                                        <img src="{% static 'frontend/img/core-img/dev_mobile-1.svg' %}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5">
+                                        <img src="{% static 'frontend/img/core-img/dev_mobile-2.svg' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h2 class="mb-3">
+                                            {% translate "Are you looking for a guarantee of robust application performance and an excellent user experience?" %}
+                                        </h2>
+                                        <p>
+                                            {% translate "Mobile development requires staying in the mobile head space, meaning that it’s even more important than with other hardware contexts to optimize performance, battery, network, and memory management. Our team aware of how to deal with device fragmentation, they working closely with a designer to achieve the best user experience (UX) results." %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-120 d-block"></div>
+
+    <div class="about-area about3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+                    <div class="section-heading text-center">
+                        <h2>{% translate "Our responsability" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-tools"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Support the entire application lifecycle (concept, design, test, release and support)." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-danger bi bi-code-slash"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Produce fully functional mobile applications writing clean code." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-warning bi bi-box-fill"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Identify requirements precisely and offer remedies." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-terminal"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Creating unit and user interface tests to detect flaws." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-bug"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Design interfaces to improve user experience." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-warning bi bi-gear"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Ensure new and legacy applications meet quality standards." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-dander success bi bi-bug"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Troubleshoot and debug to optimize performance." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                        <div class="card feature-card">
+                            <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-bar-chart"></i>
+                                <div class="fea-text">
+                                    <span>{% translate "Research and suggest new mobile products, applications and protocols." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-120 d-block"></div>
+</div>
+
+{% endblock content %}

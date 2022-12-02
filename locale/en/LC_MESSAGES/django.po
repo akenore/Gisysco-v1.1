@@ -1,0 +1,1643 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-26 10:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: backend/forms.py:19
+msgid "username"
+msgstr ""
+
+#: backend/forms.py:20 backend/forms.py:31
+msgid "email"
+msgstr ""
+
+#: backend/forms.py:21
+msgid "password"
+msgstr ""
+
+#: backend/forms.py:22
+msgid "password again"
+msgstr ""
+
+#: blog/models.py:24
+msgid "Feature Image"
+msgstr ""
+
+#: blog/views.py:16
+msgid "Your post has been successfully added"
+msgstr ""
+
+#: blog/views.py:29 page/views.py:20
+msgid "Your post has been successfully update"
+msgstr ""
+
+#: blog/views.py:47
+msgid "Your post has been successfully deleted"
+msgstr ""
+
+#: blog/views.py:53
+msgid "Your category has been successfully added"
+msgstr ""
+
+#: blog/views.py:65
+msgid "Your category has been successfully update"
+msgstr ""
+
+#: blog/views.py:77
+msgid "Your category has been successfully deleted"
+msgstr ""
+
+#: clients/models.py:12
+msgid "Company Name"
+msgstr ""
+
+#: clients/models.py:13
+msgid "Company Domain"
+msgstr ""
+
+#: clients/views.py:22 page/views.py:12
+msgid "Client has been successfully added"
+msgstr ""
+
+#: clients/views.py:45
+msgid "Your information has been successfully updated"
+msgstr ""
+
+#: clients/views.py:75
+msgid "Client has been successfully deleted"
+msgstr ""
+
+#: config/settings.py:132 templates/frontend/footer.html:174
+msgid "English"
+msgstr ""
+
+#: config/settings.py:133
+msgid "French"
+msgstr ""
+
+#: config/settings.py:134
+msgid "Español"
+msgstr ""
+
+#: frontend/models.py:6
+msgid "Full Name"
+msgstr ""
+
+#: frontend/models.py:7
+msgid "Email"
+msgstr ""
+
+#: frontend/models.py:8
+msgid "Topics"
+msgstr ""
+
+#: frontend/models.py:9
+msgid "Message"
+msgstr ""
+
+#: frontend/views.py:28
+msgid ""
+"Your submission was successfully received, and our team will answer you as "
+"soon as possible"
+msgstr ""
+
+#: frontend/views.py:38
+msgid "Gisysco: Account status"
+msgstr ""
+
+#: frontend/views.py:39
+msgid "New email from contact gisysco."
+msgstr ""
+
+#: frontend/views.py:41
+#, python-brace-format
+msgid ""
+"Hello Team <br> <p>Mr/Ms: <strong>{full_name}</strong> need help about "
+"<strong> {topic} </strong> <br> His message:<br> {message} </p> <p><a "
+"href=\"mailto:{email}\">customer email</a></p>"
+msgstr ""
+
+#: page/models.py:18
+msgid "Page"
+msgstr ""
+
+#: page/models.py:19
+msgid "Pages"
+msgstr ""
+
+#: projects/models.py:12
+msgid "Name"
+msgstr ""
+
+#: projects/models.py:13
+msgid "slug"
+msgstr ""
+
+#: projects/models.py:17
+msgid "Mobile Application"
+msgstr ""
+
+#: projects/models.py:18 tasks/models.py:18
+msgid "Web Site"
+msgstr ""
+
+#: projects/models.py:19 tasks/models.py:19
+#: templates/frontend/views/design.html:3
+msgid "Design"
+msgstr ""
+
+#: projects/models.py:20 tasks/models.py:20
+msgid "SEO & Marketing"
+msgstr ""
+
+#: projects/models.py:21 tasks/models.py:21
+msgid "Debuging"
+msgstr ""
+
+#: projects/models.py:27
+msgid "In Progress"
+msgstr ""
+
+#: projects/models.py:28
+msgid "Done"
+msgstr ""
+
+#: projects/models.py:29
+msgid "Pending"
+msgstr ""
+
+#: projects/views.py:18
+msgid "Your project has been successfully added"
+msgstr ""
+
+#: projects/views.py:26 tasks/views.py:17
+msgid "Your project has been successfully update"
+msgstr ""
+
+#: projects/views.py:40 tasks/views.py:31
+msgid "Your project has been successfully deleted"
+msgstr ""
+
+#: tasks/models.py:17
+msgid "Normal"
+msgstr ""
+
+#: tasks/models.py:22
+msgid "Description"
+msgstr ""
+
+#: tasks/models.py:23
+msgid "Delivery Date"
+msgstr ""
+
+#: tasks/models.py:26
+msgid "It Services"
+msgstr ""
+
+#: tasks/models.py:27
+msgid "Marketing Services"
+msgstr ""
+
+#: tasks/models.py:28
+msgid "Commercial"
+msgstr ""
+
+#: templates/account/account_inactive.html:5
+#: templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr ""
+
+#: templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: templates/account/email.html:5 templates/account/email.html:8
+msgid "E-mail Addresses"
+msgstr ""
+
+#: templates/account/email.html:10
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: templates/account/email.html:24
+msgid "Verified"
+msgstr ""
+
+#: templates/account/email.html:26
+msgid "Unverified"
+msgstr ""
+
+#: templates/account/email.html:28
+msgid "Primary"
+msgstr ""
+
+#: templates/account/email.html:34
+msgid "Make Primary"
+msgstr ""
+
+#: templates/account/email.html:35
+msgid "Re-send Verification"
+msgstr ""
+
+#: templates/account/email.html:36
+msgid "Remove"
+msgstr ""
+
+#: templates/account/email.html:43
+msgid "Warning:"
+msgstr ""
+
+#: templates/account/email.html:43
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: templates/account/email.html:48
+msgid "Add E-mail Address"
+msgstr ""
+
+#: templates/account/email.html:53
+msgid "Add E-mail"
+msgstr ""
+
+#: templates/account/email.html:63
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: templates/account/email/base_message.txt:1
+#, python-format
+msgid "Hello from %(site_name)s!"
+msgstr ""
+
+#: templates/account/email/base_message.txt:5
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+
+#: templates/account/email/email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s"
+msgstr ""
+
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.txt:4
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.txt:9
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr ""
+
+#: templates/account/email/password_reset_key_subject.txt:3
+#: templates/account/email/unknown_account_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: templates/account/email/unknown_account_message.txt:4
+#, python-format
+msgid ""
+"You are receiving this e-mail because you or someone else has requested a\n"
+"password for your user account. However, we do not have any record of a "
+"user\n"
+"with email %(email)s in our database.\n"
+"\n"
+"This mail can be safely ignored if you did not request a password reset.\n"
+"\n"
+"If it was you, you can sign up for an account using the link below."
+msgstr ""
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: templates/account/login.html:6 templates/account/login.html:11
+msgid "Sign In"
+msgstr ""
+
+#: templates/account/login.html:17
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"    of your existing third party accounts. Or, <a href=\"%(signup_url)s\"\n"
+"      class=\"inline-flex items-center font-medium text-blue-600 dark:text-"
+"blue-500 hover:underline\">sign up</a>\n"
+"    for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: templates/account/login.html:28
+msgid "or"
+msgstr ""
+
+#: templates/account/login.html:35
+#, python-format
+msgid ""
+"If you have not created an\n"
+"    account yet, then please\n"
+"    <a href=\"%(signup_url)s\"\n"
+"      class=\"inline-flex items-center font-medium text-blue-600 dark:text-"
+"blue-500 hover:underline\">sign up</a>\n"
+"    first."
+msgstr ""
+
+#: templates/account/login.html:86 templates/account/password_change.html:14
+msgid "Forgot Password?"
+msgstr ""
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:19
+msgid "Sign Out"
+msgstr ""
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr ""
+
+#: templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr ""
+
+#: templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr ""
+
+#: templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr ""
+
+#: templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr ""
+
+#: templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr ""
+
+#: templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr ""
+
+#: templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr ""
+
+#: templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr ""
+
+#: templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr ""
+
+#: templates/account/password_change.html:5
+#: templates/account/password_change.html:8
+#: templates/account/password_change.html:13
+#: templates/account/password_reset_from_key.html:4
+#: templates/account/password_reset_from_key.html:7
+#: templates/account/password_reset_from_key_done.html:4
+#: templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: templates/account/password_reset.html:6
+#: templates/account/password_reset.html:10
+#: templates/account/password_reset_done.html:6
+#: templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr ""
+
+#: templates/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: templates/account/password_reset.html:24
+msgid "Reset My Password"
+msgstr ""
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:7
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:11
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:16
+msgid "change password"
+msgstr ""
+
+#: templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: templates/account/password_set.html:5 templates/account/password_set.html:8
+#: templates/account/password_set.html:13
+msgid "Set Password"
+msgstr ""
+
+#: templates/account/signup.html:5
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup.html:8
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:24
+#, python-format
+msgid ""
+"Already have an account? Then\n"
+"  please <a href=\"%(login_url)s\"\n"
+"    class=\"inline-flex items-center font-medium text-blue-600  dark:text-"
+"blue-500 hover:underline\">sign\n"
+"    in</a>"
+msgstr ""
+
+#: templates/account/signup_closed.html:5
+#: templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: templates/account/snippets/already_logged_in.html:5
+msgid "Note"
+msgstr ""
+
+#: templates/account/snippets/already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: templates/account/verification_sent.html:5
+#: templates/account/verification_sent.html:8
+#: templates/account/verified_email_required.html:5
+#: templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. If you do not see the verification e-mail in "
+"your main inbox, check your spam folder. Please contact us if you do not "
+"receive the verification e-mail within a few minutes."
+msgstr ""
+
+#: templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside that e-mail. If you do not see "
+"the verification e-mail in your main inbox, check your spam folder. "
+"Otherwise\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: templates/api/base.html:11 templates/backend/base.html:11
+msgid "Dashboard"
+msgstr ""
+
+#: templates/backend/base.html:39
+msgid "Go home"
+msgstr ""
+
+#: templates/backend/blog/add_update.html:4
+msgid "Add post"
+msgstr ""
+
+#: templates/backend/blog/add_update.html:31
+msgid "Article"
+msgstr ""
+
+#: templates/backend/blog/add_update.html:59
+#: templates/backend/blog/categories.html:134
+msgid "Click to upload"
+msgstr ""
+
+#: templates/backend/blog/add_update.html:75
+#: templates/backend/blog/categories.html:150
+#: templates/backend/clients/profile.html:69
+#: templates/backend/projects/add_update.html:57
+msgid "Update"
+msgstr ""
+
+#: templates/backend/blog/add_update.html:77
+#: templates/backend/blog/categories.html:152
+#: templates/backend/clients/profile.html:71
+#: templates/backend/projects/add_update.html:59
+msgid "Publish"
+msgstr ""
+
+#: templates/backend/blog/articles.html:4
+#: templates/backend/projects/list_projects.html:4
+msgid "All articles"
+msgstr ""
+
+#: templates/backend/blog/articles.html:11
+msgid "Add new post"
+msgstr ""
+
+#: templates/backend/blog/articles.html:44
+#: templates/backend/blog/categories.html:28
+#: templates/backend/projects/list_projects.html:44
+msgid "Edit"
+msgstr ""
+
+#: templates/backend/blog/articles.html:52
+#: templates/backend/blog/categories.html:36
+#: templates/backend/projects/list_projects.html:52
+msgid "Delete"
+msgstr ""
+
+#: templates/backend/blog/articles.html:70
+#: templates/backend/blog/categories.html:54
+#: templates/backend/projects/list_projects.html:70
+msgid "Close modal"
+msgstr ""
+
+#: templates/backend/blog/articles.html:79
+#: templates/backend/blog/categories.html:63
+#: templates/backend/projects/list_projects.html:79
+msgid "Are you sure you want to delete"
+msgstr ""
+
+#: templates/backend/blog/articles.html:86
+#: templates/backend/blog/categories.html:70
+#: templates/backend/projects/list_projects.html:86
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: templates/backend/blog/articles.html:90
+#: templates/backend/blog/categories.html:74
+#: templates/backend/projects/list_projects.html:90
+msgid "No, cancel"
+msgstr ""
+
+#: templates/backend/blog/articles.html:101
+#: templates/backend/clients/list-client.html:101
+#: templates/backend/projects/list_projects.html:101
+msgid "Sorry, there are no articles in the list."
+msgstr ""
+
+#: templates/backend/blog/articles.html:104
+#: templates/backend/blog/categories.html:88
+#: templates/backend/clients/list-client.html:104
+#: templates/backend/projects/list_projects.html:104
+msgid "Dismiss"
+msgstr ""
+
+#: templates/backend/blog/categories.html:4
+#: templates/backend/mobile-nav.html:180 templates/backend/sidebar.html:262
+#: templates/frontend/blog.html:78
+msgid "Categories"
+msgstr ""
+
+#: templates/backend/blog/categories.html:85
+msgid "Sorry, there are no categories in the list."
+msgstr ""
+
+#: templates/backend/clients/list-client.html:4
+msgid "All Clients"
+msgstr ""
+
+#: templates/backend/clients/profile.html:20
+msgid "Last Name: "
+msgstr ""
+
+#: templates/backend/clients/profile.html:29
+msgid "Email address: "
+msgstr ""
+
+#: templates/backend/clients/profile.html:38
+msgid "Company Name: "
+msgstr ""
+
+#: templates/backend/clients/profile.html:47
+msgid "Company Domain: "
+msgstr ""
+
+#: templates/backend/clients/profile.html:56
+msgid "Validated client: "
+msgstr ""
+
+#: templates/backend/index.html:7
+msgid "Noteworthy technology acquisitions 2021"
+msgstr ""
+
+#: templates/backend/index.html:9
+msgid ""
+"Here are the biggest enterprise technology acquisitions of 2021 so far, in "
+"reverse chronological order."
+msgstr ""
+
+#: templates/backend/index.html:12
+msgid "Read more"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:6 templates/backend/sidebar.html:9
+msgid "MySpace"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:11
+msgid "Open main menu"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:26 templates/backend/sidebar.html:28
+msgid "Clients"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:38 templates/backend/sidebar.html:44
+msgid "History"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:45 templates/backend/sidebar.html:58
+msgid "Profile"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:58 templates/backend/sidebar.html:90
+msgid "Projects"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:71 templates/backend/sidebar.html:118
+msgid "Add-Update Projects"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:78 templates/backend/sidebar.html:129
+msgid "Details"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:85 templates/backend/sidebar.html:136
+msgid "List Projects"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:92
+msgid "Tasks"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:106 templates/backend/sidebar.html:158
+msgid "Add-Update Tasks"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:111 templates/backend/sidebar.html:163
+msgid "Check Tasks"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:122 templates/backend/sidebar.html:193
+msgid "Support"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:134 templates/backend/sidebar.html:205
+msgid "Marketing Form"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:139 templates/backend/sidebar.html:210
+msgid "Marketing List"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:144
+msgid "Technical Form"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:149 templates/backend/sidebar.html:220
+msgid "Technical List"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:157 templates/backend/sidebar.html:239
+msgid "Articles"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:169 templates/backend/sidebar.html:251
+msgid "All Articles"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:174
+msgid "New Post"
+msgstr ""
+
+#: templates/backend/mobile-nav.html:190 templates/backend/sidebar.html:278
+msgid "Logout"
+msgstr ""
+
+#: templates/backend/projects/add_update.html:4
+msgid "Add Project"
+msgstr ""
+
+#: templates/backend/projects/list_projects.html:11
+msgid "Add new project"
+msgstr ""
+
+#: templates/backend/sidebar.html:68
+msgid "List Clients"
+msgstr ""
+
+#: templates/backend/sidebar.html:215
+msgid "technical Form"
+msgstr ""
+
+#: templates/backend/sidebar.html:257
+msgid "NewPost"
+msgstr ""
+
+#: templates/frontend/base.html:32
+msgid "Loading..."
+msgstr ""
+
+#: templates/frontend/blog.html:3
+msgid "blog"
+msgstr ""
+
+#: templates/frontend/blog.html:12 templates/frontend/blog.html:19
+msgid "Blogs"
+msgstr ""
+
+#: templates/frontend/blog.html:16 templates/frontend/contact.html:18
+#: templates/frontend/footer.html:44 templates/frontend/header.html:10
+#: templates/frontend/views/design.html:16
+#: templates/frontend/views/details_blog.html:17
+#: templates/frontend/views/login.html:15
+#: templates/frontend/views/marketing.html:15
+#: templates/frontend/views/mobile_dev.html:16
+#: templates/frontend/views/seo.html:15
+#: templates/frontend/views/services.html:16
+#: templates/frontend/views/web_dev.html:17
+msgid "Home"
+msgstr ""
+
+#: templates/frontend/blog.html:52
+msgid "read"
+msgstr ""
+
+#: templates/frontend/blog.html:58
+msgid "no p"
+msgstr ""
+
+#: templates/frontend/blog.html:94
+#: templates/frontend/views/details_blog.html:52
+msgid "Recent Posts"
+msgstr ""
+
+#: templates/frontend/blog.html:113
+msgid "Popular Tags"
+msgstr ""
+
+#: templates/frontend/contact.html:15 templates/frontend/contact.html:19
+#: templates/frontend/footer.html:55 templates/frontend/footer.html:100
+#: templates/frontend/header.html:26 templates/frontend/home.html:27
+msgid "Contact Us"
+msgstr ""
+
+#: templates/frontend/contact.html:33
+msgid "Let's talk about all things!"
+msgstr ""
+
+#: templates/frontend/contact.html:34
+msgid ""
+"Write to us or give us a call. We will reply to you as soon as possible. But "
+"yes, it can take up to 24 hours."
+msgstr ""
+
+#: templates/frontend/contact.html:68
+msgid "Email Address:"
+msgstr ""
+
+#: templates/frontend/contact.html:72
+msgid "Topics:"
+msgstr ""
+
+#: templates/frontend/contact.html:76
+msgid "Message:"
+msgstr ""
+
+#: templates/frontend/contact.html:80
+msgid "Send Now"
+msgstr ""
+
+#: templates/frontend/footer.html:16
+msgid ""
+" We share a passion for design, technology and communication.\n"
+"            Our focus allows us to combine these passions to create "
+"competitive solutions.\n"
+"            We follow proven processes to achieve the highest levels of "
+"clarity and\n"
+"            clarity and distinction in our work. "
+msgstr ""
+
+#: templates/frontend/footer.html:40
+msgid "Quick Links"
+msgstr ""
+
+#: templates/frontend/footer.html:51 templates/frontend/header.html:23
+#: templates/frontend/views/details_blog.html:20
+msgid "Blog"
+msgstr ""
+
+#: templates/frontend/footer.html:59 templates/frontend/header.html:32
+msgid "My Space"
+msgstr ""
+
+#: templates/frontend/footer.html:67 templates/frontend/header.html:13
+#: templates/frontend/views/services.html:12
+#: templates/frontend/views/services.html:18
+msgid "What we do"
+msgstr ""
+
+#: templates/frontend/footer.html:71 templates/frontend/header.html:15
+#: templates/frontend/home.html:18
+msgid "Design & Branding"
+msgstr ""
+
+#: templates/frontend/footer.html:76 templates/frontend/header.html:16
+#: templates/frontend/home.html:22 templates/frontend/views/services.html:75
+msgid "Web Development"
+msgstr ""
+
+#: templates/frontend/footer.html:81 templates/frontend/header.html:17
+#: templates/frontend/home.html:26 templates/frontend/views/mobile_dev.html:3
+#: templates/frontend/views/mobile_dev.html:12
+#: templates/frontend/views/mobile_dev.html:19
+#: templates/frontend/views/services.html:107
+msgid "Mobile Development"
+msgstr ""
+
+#: templates/frontend/footer.html:86 templates/frontend/header.html:18
+#: templates/frontend/views/marketing.html:62
+#: templates/frontend/views/seo.html:12 templates/frontend/views/seo.html:16
+#: templates/frontend/views/services.html:144
+msgid "SEO"
+msgstr ""
+
+#: templates/frontend/footer.html:91 templates/frontend/home.html:34
+#: templates/frontend/views/services.html:176
+msgid "Marketing"
+msgstr ""
+
+#: templates/frontend/footer.html:152
+msgid "2022 &copy; All rights reserved by"
+msgstr ""
+
+#: templates/frontend/footer.html:158
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/frontend/footer.html:159
+msgid "Terms & Conditions"
+msgstr ""
+
+#: templates/frontend/footer.html:160
+msgid "Get Support"
+msgstr ""
+
+#: templates/frontend/footer.html:170
+msgid "Language"
+msgstr ""
+
+#: templates/frontend/footer.html:177
+msgid "Spanish"
+msgstr ""
+
+#: templates/frontend/footer.html:180
+msgid "Frensh"
+msgstr ""
+
+#: templates/frontend/footer.html:193
+msgid ""
+" This site uses cookies. We use cookies to ensure you get the best "
+"experience\n"
+"    on our website. For details, please check our "
+msgstr ""
+
+#: templates/frontend/footer.html:195
+msgid "Privacy Policy."
+msgstr ""
+
+#: templates/frontend/footer.html:202
+msgid "I agree & Close"
+msgstr ""
+
+#: templates/frontend/header.html:19 templates/frontend/views/marketing.html:12
+#: templates/frontend/views/marketing.html:16
+#: templates/frontend/views/marketing.html:40
+msgid "Digital Marketing"
+msgstr ""
+
+#: templates/frontend/header.html:34
+msgid "Log In"
+msgstr ""
+
+#: templates/frontend/home.html:3
+msgid "home"
+msgstr ""
+
+#: templates/frontend/home.html:17
+msgid "Free to use"
+msgstr ""
+
+#: templates/frontend/home.html:19
+msgid ""
+"We take great care while designing the UI/UX user interface to ensure that "
+"it is appealing, practical, and simple to use. Our designers collaborate "
+"closely with the marketing team to create an appealing and well-referenced "
+"design that captures your company's identity and values for our complete "
+"digital platform."
+msgstr ""
+
+#: templates/frontend/home.html:21 templates/frontend/home.html:29
+#: templates/frontend/home.html:33
+msgid "Try 15 days free trial"
+msgstr ""
+
+#: templates/frontend/home.html:23
+msgid ""
+"We study your needs as well the feasibility of your wishes with intelligent "
+"and efficient means to meet all your requirements. Our team takes care of "
+"the development of your web platform by respecting your criteria and vision."
+msgstr ""
+
+#: templates/frontend/home.html:23 templates/frontend/home.html:31
+#: templates/frontend/home.html:35
+msgid "All Features"
+msgstr ""
+
+#: templates/frontend/home.html:25
+msgid "Secure & Stable"
+msgstr ""
+
+#: templates/frontend/home.html:27
+msgid ""
+"Our team takes care of your iOS and Android applications. We study your "
+"needs for adequate solutions. We will also take care of API development and "
+"the design of best practices for mobile application coding."
+msgstr ""
+
+#: templates/frontend/home.html:30
+msgid "Powerful SEO & business service."
+msgstr ""
+
+#: templates/frontend/home.html:31
+msgid ""
+"Several parameters are to be taken into account for a website to have good "
+"referencing for that our team supports the analysis and the follow-up of SEO "
+"referencing - Search Engine Optimization."
+msgstr ""
+
+#: templates/frontend/home.html:35
+msgid ""
+"Where will your highest ROI be tomorrow, next month, and next year? We’ll "
+"help you assess your online marketing strategy as well as your campaigns and "
+"advise you on a plan that ensures you stay competitive in the long run."
+msgstr ""
+
+#: templates/frontend/home.html:75
+msgid "10 years experienced"
+msgstr ""
+
+#: templates/frontend/home.html:76
+msgid "We provide the best services."
+msgstr ""
+
+#: templates/frontend/home.html:77
+msgid ""
+"All of our teams are free to express their creativity and anticipate new "
+"difficulties thanks to our dedication to fostering a positive work "
+"environment. They do this by suggesting creative solutions using the newest "
+"design trends and coding with all contemporary techniques."
+msgstr ""
+
+#: templates/frontend/home.html:95
+msgid "See our top recommendations for our services."
+msgstr ""
+
+#: templates/frontend/home.html:96
+msgid ""
+"We have been around since 2012, have seen the advent of new mobile "
+"technologies, and we bring our excitement and ingenuity to bear on putting "
+"effective ideas into practice."
+msgstr ""
+
+#: templates/frontend/home.html:97
+msgid "We offer our services, check out our best solutions."
+msgstr ""
+
+#: templates/frontend/home.html:108
+msgid "Web solutions"
+msgstr ""
+
+#: templates/frontend/home.html:108
+msgid "program distributed over a network."
+msgstr ""
+
+#: templates/frontend/home.html:117
+msgid "Mobile Solution"
+msgstr ""
+
+#: templates/frontend/home.html:117
+msgid "Solution for Android and iOS applications"
+msgstr ""
+
+#: templates/frontend/home.html:126
+msgid "E-commerce solutions"
+msgstr ""
+
+#: templates/frontend/home.html:126
+msgid "Create and profit"
+msgstr ""
+
+#: templates/frontend/home.html:135
+msgid "Design UI/UX"
+msgstr ""
+
+#: templates/frontend/home.html:135
+msgid "Development of UI and UX design."
+msgstr ""
+
+#: templates/frontend/home.html:144
+msgid "Hosting & clouding"
+msgstr ""
+
+#: templates/frontend/home.html:145
+msgid "Hosting solutions for everyone"
+msgstr ""
+
+#: templates/frontend/home.html:154
+msgid "Fixed Bugs"
+msgstr ""
+
+#: templates/frontend/home.html:154
+msgid "Unlimited bug fix"
+msgstr ""
+
+#: templates/frontend/home.html:163 templates/frontend/home.html:263
+msgid "Digital Marketing & SEO"
+msgstr ""
+
+#: templates/frontend/home.html:163
+msgid "Boost your sales"
+msgstr ""
+
+#: templates/frontend/home.html:172
+msgid "Digital transformation"
+msgstr ""
+
+#: templates/frontend/home.html:172
+msgid "Modernize corporate IT systems"
+msgstr ""
+
+#: templates/frontend/home.html:181
+msgid "Live Support Help"
+msgstr ""
+
+#: templates/frontend/home.html:181
+msgid "Support 24h a day"
+msgstr ""
+
+#: templates/frontend/home.html:198
+msgid "Awarded Company"
+msgstr ""
+
+#: templates/frontend/home.html:199
+msgid "Awesome stunning smart & dynamic feature for your website."
+msgstr ""
+
+#: templates/frontend/home.html:216 templates/frontend/views/design.html:12
+#: templates/frontend/views/design.html:19
+#: templates/frontend/views/services.html:38
+msgid "Design & Brinding"
+msgstr ""
+
+#: templates/frontend/home.html:217
+msgid "We provide best design & brinding solution."
+msgstr ""
+
+#: templates/frontend/home.html:218
+msgid ""
+"The visitor must want to browse your site, so you must have an excellent and "
+"distinctive design for it."
+msgstr ""
+
+#: templates/frontend/home.html:227
+#, python-format
+msgid "Clients Satisfaction Rate: 97%%"
+msgstr ""
+
+#: templates/frontend/home.html:239
+msgid "Development Web & Mobile"
+msgstr ""
+
+#: templates/frontend/home.html:240
+msgid "We offer web & mobile development services."
+msgstr ""
+
+#: templates/frontend/home.html:241
+msgid ""
+"With passion and enthusiasm, our developers create the best web and mobile "
+"applications for you."
+msgstr ""
+
+#: templates/frontend/home.html:251
+#, python-format
+msgid "Clients Return Rate: 95%%"
+msgstr ""
+
+#: templates/frontend/home.html:264
+msgid "We offer innovative SEO and digital marketing solutions."
+msgstr ""
+
+#: templates/frontend/home.html:265
+msgid ""
+"Our digital marketing consultants provide you with creative advice, optimize "
+"your website for search engines (SEO), and raise your rank in search engine "
+"results."
+msgstr ""
+
+#: templates/frontend/home.html:267
+msgid "Customer Relationship Management (CRM)"
+msgstr ""
+
+#: templates/frontend/home.html:268
+msgid "Content Management Systems (CMS)"
+msgstr ""
+
+#: templates/frontend/home.html:269
+msgid "Digital Asset Management Platforms (DAM)"
+msgstr ""
+
+#: templates/frontend/home.html:270
+msgid "Search Analytics Providers (Google and alt sources)"
+msgstr ""
+
+#: templates/frontend/home.html:274
+#, python-format
+msgid "Business Solution Rate: 96%%"
+msgstr ""
+
+#: templates/frontend/home.html:297
+msgid "Testimonials"
+msgstr ""
+
+#: templates/frontend/home.html:298
+msgid "Read some reviews from our beloved clients about our work."
+msgstr ""
+
+#: templates/frontend/home.html:299
+msgid ""
+"Listening to our customers is essential for the continuity of our relations "
+"and the optimization of our services. Here are some reviews."
+msgstr ""
+
+#: templates/frontend/home.html:409
+msgid "Trusted and used by many companies."
+msgstr ""
+
+#: templates/frontend/home.html:435
+msgid "Latest Blog's"
+msgstr ""
+
+#: templates/frontend/home.html:436
+msgid "Our Latest News"
+msgstr ""
+
+#: templates/frontend/home.html:437
+msgid "Here are some tips to help you with sponsorship and other issues."
+msgstr ""
+
+#: templates/frontend/home.html:441
+msgid "View All News"
+msgstr ""
+
+#: templates/frontend/home.html:453
+msgid "Continue reading..."
+msgstr ""
+
+#: templates/frontend/home.html:467
+msgid "Create a stunning website quickly and effortlessly."
+msgstr ""
+
+#: templates/frontend/home.html:467
+msgid "Get started now"
+msgstr ""
+
+#: templates/frontend/views/design.html:46
+msgid "Have you got a brilliant idea? Together, let's build it."
+msgstr ""
+
+#: templates/frontend/views/design.html:49
+msgid ""
+"We are convinced that we can provide you a top-notch design for your website "
+"or your mobile application thanks to our years of experience and use of the "
+"most up-to-date design technologies."
+msgstr ""
+
+#: templates/frontend/views/design.html:75
+msgid ""
+"Do you believe the way your website is currently designed is turning off "
+"potential customers?"
+msgstr ""
+
+#: templates/frontend/views/design.html:78
+msgid ""
+"Redesigning your website will help your business create more leads and sales "
+"through appealing, user-friendly design and effective call-to-action systems."
+msgstr ""
+
+#: templates/frontend/views/design.html:81
+msgid ""
+"Our UI/UX designer will work closely with our marketing team and designers "
+"to ensure seamless web/mobile design and the successful implementation of UI/"
+"UX best practices and principles across all our digital platforms."
+msgstr ""
+
+#: templates/frontend/views/design.html:101
+#: templates/frontend/views/mobile_dev.html:97
+msgid "Our responsability"
+msgstr ""
+
+#: templates/frontend/views/design.html:114
+msgid ""
+"Developing user-centered designs based on business requirements and user "
+"feedback"
+msgstr ""
+
+#: templates/frontend/views/design.html:127
+msgid ""
+"Translating requirements into style guides, design systems, design patterns, "
+"and attractive user interfaces."
+msgstr ""
+
+#: templates/frontend/views/design.html:140
+msgid ""
+"Designing UI elements such as input controls, navigational components, and "
+"informational components"
+msgstr ""
+
+#: templates/frontend/views/design.html:154
+msgid " Recognizing and resolving UX issues (e.g.responsiveness)."
+msgstr ""
+
+#: templates/frontend/views/design.html:167
+msgid ""
+"Incorporating customer feedback, usage metrics, and usability findings into "
+"the design to enhance user experience."
+msgstr ""
+
+#: templates/frontend/views/design.html:180
+msgid "Creating original graphic designs (e.g. images, sketches, and tables)."
+msgstr ""
+
+#: templates/frontend/views/login.html:3
+msgid "login"
+msgstr ""
+
+#: templates/frontend/views/login.html:12
+#: templates/frontend/views/login.html:16
+msgid "Login"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:3
+msgid "marketing"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:41
+msgid ""
+"Our marketing goal is to research consumer requirements, expectations, and "
+"behavior in order to provide them appropriate products or services."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:42
+msgid ""
+"The primary benefit of digital marketing is the cost-effective and "
+"measurable reach of a targeted audience. Other advantages of digital "
+"marketing include boosting brand recognition and generating online sales."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:63
+msgid ""
+"The finest accomplishment for attracting Unique Customers, which will "
+"increase your sales and ROI, is Search Engine Optimization (SEO). Simply "
+"said, we raise your brand's visibility organically on Google and other "
+"search engines."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:71
+msgid "Local SEO"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:72
+msgid ""
+"Do you have enough visits, phone calls, or leads for your local business? "
+"Allow us to propel your local business forward with Local SEO Services."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:80
+msgid "Pay Per Click"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:81
+msgid ""
+"Start your road toward increased traffic, leads, and sales by investing in "
+"cost-effective paid advertising. Pay per click advertising is characterized "
+"by the fact that you only have to pay when someone clicks on your "
+"advertisement."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:89
+msgid "Social Media Optimization"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:90
+msgid ""
+"With our proven and result-driven social media optimization, such Facebook, "
+"Instagram, etc., you can develop, reach, engage, and drive traffic."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:98
+msgid "Bulk SMS"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:99
+msgid ""
+"Bulk SMS marketing initiatives offer minimal operational costs and a high "
+"ROI when compared to other forms of promotion such as commercials, newspaper "
+"ads, and so on."
+msgstr ""
+
+#: templates/frontend/views/marketing.html:107
+msgid "Email Marketing"
+msgstr ""
+
+#: templates/frontend/views/marketing.html:108
+msgid ""
+"for branding, commitment, securing, maintenance, direct sales, reactivation, "
+"traffic generation, and referrals, can be used Email marketing."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:47
+msgid "Do you agree with us that smartphones have become a daily necessities?"
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:50
+msgid ""
+"You may take use of this service from our team, who develop mobile and "
+"tablet applications. They are knowledgeable with the most recent "
+"developments in the field of iOS and Android devices."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:75
+msgid ""
+"Are you looking for a guarantee of robust application performance and an "
+"excellent user experience?"
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:78
+msgid ""
+"Mobile development requires staying in the mobile head space, meaning that "
+"it’s even more important than with other hardware contexts to optimize "
+"performance, battery, network, and memory management. Our team aware of how "
+"to deal with device fragmentation, they working closely with a designer to "
+"achieve the best user experience (UX) results."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:107
+msgid ""
+"Support the entire application lifecycle (concept, design, test, release and "
+"support)."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:116
+msgid "Produce fully functional mobile applications writing clean code."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:125
+msgid "Identify requirements precisely and offer remedies."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:134
+msgid "Creating unit and user interface tests to detect flaws."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:143
+msgid "Design interfaces to improve user experience."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:152
+msgid "Ensure new and legacy applications meet quality standards."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:161
+msgid "Troubleshoot and debug to optimize performance."
+msgstr ""
+
+#: templates/frontend/views/mobile_dev.html:170
+msgid "Research and suggest new mobile products, applications and protocols."
+msgstr ""
+
+#: templates/frontend/views/seo.html:3
+msgid "seo"
+msgstr ""
+
+#: templates/frontend/views/seo.html:43
+msgid "What does SEO mean?"
+msgstr ""
+
+#: templates/frontend/views/seo.html:44
+msgid ""
+"In today's rapidly evolving digital environment, the correct digital "
+"marketing services solutions may propel your company to new heights. With "
+"our SEO administrations, we help you realize the maximum level of Google."
+msgstr ""
+
+#: templates/frontend/views/seo.html:66
+msgid "Why SEO?"
+msgstr ""
+
+#: templates/frontend/views/seo.html:67
+msgid ""
+"Search Engine Optimization (SEO) is the most effective way to attract unique "
+"customers, which will increase your sales and ROI. Simply said, we raise "
+"your brand's visibility organically on Google and other search engines."
+msgstr ""
+
+#: templates/frontend/views/seo.html:68
+msgid ""
+"Allows your site to appear among the first results of search engines to "
+"increase the visibility of the site when searching for an Internet user."
+msgstr ""
+
+#: templates/frontend/views/services.html:3
+msgid "what_we_do"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:14
+#: templates/frontend/views/web_dev.html:18
+msgid "Web Developement"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:33
+msgid ""
+"Our team is in charge of developing web platforms and meeting the demands of "
+"our clients."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:40
+msgid "Strategy:"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:41
+msgid ""
+"We define your competition and target audience. Discover what is working in "
+"your online industry, then design your website accordingly."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:46
+msgid "Design:"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:47
+msgid ""
+"Color scheme, layout, sitemap, and style. We will bring your brand to life "
+"with a one of a kind masterpiece, built just for you."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:52
+msgid "Development:"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:53
+msgid ""
+"We turn your ideas into a reality. Our website is placed on a 'development "
+"server' where you get to watch the whole process, live."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:58
+msgid "Support:"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:59
+msgid ""
+"This is where you go live, to the world. Design, marketing, and maintenance; "
+"we'll be at your side for the life of your site."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:75
+msgid "Our accountability"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:86
+msgid "Work together to develop algorithms and flowcharts."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:95
+msgid "Produce clean, efficient code in accordance with the standards"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:104
+msgid "Integrate third-party applications and software components."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:113
+msgid "Verify and deploy programs and systems."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:122
+msgid "Troubleshoot, debug and upgrade existing software"
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:131
+msgid "Gather and evaluate user feedback."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:140
+msgid "Execute suggested improvements."
+msgstr ""
+
+#: templates/frontend/views/web_dev.html:149
+msgid "Create technical documentation for reference and reporting."
+msgstr ""

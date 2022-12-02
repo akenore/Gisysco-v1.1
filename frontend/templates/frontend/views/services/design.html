@@ -1,0 +1,200 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Design" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12">
+        <div class="breadcrumb-content">
+          <h2 class="breadcrumb-title">{% translate "Design & Brinding" %}</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item">
+                <a href="{% url 'home' %}">{% translate "Home" %}</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                {% translate "Design & Brinding" %}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="saasbox-tab-area mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tab--area">
+          <div class="tab-content" id="saasboxTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-sm-9 col-md-6">
+                  <div class="tab--text mt-3 mt-lg-5">
+                    <h2 class="mb-3">
+                      {% translate "Have you got a brilliant idea? Together, let's build it." %}
+                    </h2>
+                    <p>
+                      {% translate "We are convinced that we can provide you a top-notch design for your website or your mobile application thanks to our years of experience and use of the most up-to-date design technologies." %}
+                    </p>
+
+                  </div>
+                </div>
+                <div class="col-12 col-sm-9 col-md-6">
+                  <div class="tab-thumb mt-5 ms-lg-5">
+                    <img src="{% static 'frontend/img/core-img/design-1.svg' %}" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-sm-9 col-md-6">
+                  <div class="tab-thumb mt-5 ms-lg-5">
+                    <img src="{% static 'frontend/img/core-img/design-2.svg' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-9 col-md-6">
+                  <div class="tab--text mt-3 mt-lg-5">
+                    <h2 class="mb-3">
+                      {% translate "Do you believe the way your website is currently designed is turning off potential customers?" %}
+                    </h2>
+                    <p>
+                      {% translate "Redesigning your website will help your business create more leads and sales through appealing, user-friendly design and effective call-to-action systems." %}
+                    </p>
+                    <p>
+                      {% translate "Our UI/UX designer will work closely with our marketing team and designers to ensure seamless web/mobile design and the successful implementation of UI/UX best practices and principles across all our digital platforms." %}
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+
+<div class="about-area about3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+        <div class="section-heading text-center">
+          <h2>{% translate "Our responsability" %}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center g-3 g-lg-3">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white " style="background-color: #ED057F"
+          data-wow-delay="100ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1"> <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate "Developing user-centered designs based on business requirements and user feedback" %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white" style="background-color: #00A9E9"
+          data-wow-delay="300ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1">
+                <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate "Translating requirements into style guides, design systems, design patterns, and attractive user interfaces." %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white" style="background-color: #00037F"
+          data-wow-delay="500ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1"> <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate "Designing UI elements such as input controls, navigational components, and informational components" %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white " style="background-color: #00037F"
+          data-wow-delay="100ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1">
+                <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate " Recognizing and resolving UX issues (e.g.responsiveness)." %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white" style="background-color: #ED057F"
+          data-wow-delay="300ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1"> <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="left-bar" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate "Incorporating customer feedback, usage metrics, and usability findings into the design to enhance user experience." %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card hero-card h-100 border-0 wow fadeInUp p-3 text-white" style="background-color: #00A9E9"
+          data-wow-delay="700ms" data-wow-duration="1000ms">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-1 col-sm-1"> <img src="{% static 'frontend/img/core-img/left-bar.svg' %}" alt="" />
+              </div>
+              <div class="col-11 col-sm-11">
+                <p class="mb-0" style="font-size: 18px;">
+                  {% translate "Creating original graphic designs (e.g. images, sketches, and tables)." %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-120 d-block"></div>
+
+{% comment %} TODO: fix font style for design page frontend {% endcomment %}
+
+</div>
+
+{% endblock content %}

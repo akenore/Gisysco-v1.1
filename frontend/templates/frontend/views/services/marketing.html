@@ -1,0 +1,140 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Marketing" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "Digital Marketing" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% translate "Home" %}</a></li>
+                            <li class="breadcrumb-item" aria-current="page">{% translate "Digital Marketing" %}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+
+<div class="saasbox-tab-area mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab--area">
+                    <div class="tab-content" id="saasboxTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5"><img
+                                            src="{% static 'frontend/img/core-img/digital-marketing.svg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h2 class="mb-3">{% translate "Digital Marketing" %}</h2>
+                                        <p>{% translate "Our marketing goal is to research consumer requirements, expectations, and behavior in order to provide them appropriate products or services." %}
+                                        </p>
+                                        <p>{% translate "The primary benefit of digital marketing is the cost-effective and measurable reach of a targeted audience. Other advantages of digital marketing include boosting brand recognition and generating online sales." %}
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-120 d-block"></div>
+    <div class="about-area about3">
+        <div class="container">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/SEO-marketing.svg' %}" class="card-img-top"
+                                alt="seo">
+                            <div class="card-body">
+                                <h5 class="card-title">{% translate "SEO" %}</h5>
+                                <p class="card-text">
+                                    {% translate "The finest accomplishment for attracting Unique Customers, which will increase your sales and ROI, is Search Engine Optimization (SEO). Simply said, we raise your brand's visibility organically on Google and other search engines." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/Local-SEO.svg' %}" class="card-img-top"
+                                alt="local seo">
+                            <div class="card-body ">
+                                <h5 class="card-title">{% translate "Local SEO" %}</h5>
+                                <p class="card-text">
+                                    {% translate "Do you have enough visits, phone calls, or leads for your local business? Allow us to propel your local business forward with Local SEO Services." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/Pay-Per-Click.svg' %}" class="card-img-top"
+                                alt="ppc">
+                            <div class="card-body">
+                                <h5 class="card-title">{% translate "Pay Per Click" %}</h5>
+                                <p class="card-text">
+                                    {% translate "Start your road toward increased traffic, leads, and sales by investing in cost-effective paid advertising. Pay per click advertising is characterized by the fact that you only have to pay when someone clicks on your advertisement." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/Social-Media-Optimization.svg' %}"
+                                class="card-img-top" alt="socal media optimization">
+                            <div class="card-body">
+                                <h5 class="card-title">{% translate "Social Media Optimization" %}</h5>
+                                <p class="card-text">
+                                    {% translate "With our proven and result-driven social media optimization, such Facebook, Instagram, etc., you can develop, reach, engage, and drive traffic." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/Bulk-SMS.svg' %}" class="card-img-top" alt="sms">
+                            <div class="card-body">
+                                <h5 class="card-title">{% translate "Bulk SMS" %}</h5>
+                                <p class="card-text">
+                                    {% translate "Bulk SMS marketing initiatives offer minimal operational costs and a high ROI when compared to other forms of promotion such as commercials, newspaper ads, and so on." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{% static 'frontend/img/core-img/Email-Marketing.svg' %}" class="card-img-top"
+                                alt="email">
+                            <div class="card-body">
+                                <h5 class="card-title">{% translate "Email Marketing" %}</h5>
+                                <p class="card-text">
+                                    {% translate "for branding, commitment, securing, maintenance, direct sales, reactivation, traffic generation, and referrals, can be used Email marketing." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-120 d-block"></div>
+</div>
+
+{% endblock content %}

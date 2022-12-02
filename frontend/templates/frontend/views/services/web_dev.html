@@ -1,0 +1,166 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Web development" %}{% endblock title %}
+
+{% block content %}
+
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "Web Developement" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% translate "Home" %}</a></li>
+                            <li class="breadcrumb-item" aria-current="page">{% translate "Web Developement" %}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+
+<div class="portfolio-details-area portfolio-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-9 col-lg-7">
+                <div class="section-heading text-center">
+                    <h3>{% translate "Our team is in charge of developing web platforms and meeting the demands of our clients." %}
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 g-lg-5 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-stretch">
+                <div class="project-card text-center bg-success"><span>01</span>
+                    <h3>{% translate "Strategy:" %}</h3>
+                    <p class="mb-0">
+                        {% translate "We define your competition and target audience. Discover what is working in your online industry, then design your website accordingly." %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-stretch">
+                <div class="project-card text-center"><span>02</span>
+                    <h3>{% translate "Design:" %}</h3>
+                    <p class="mb-0">
+                        {% translate "Color scheme, layout, sitemap, and style. We will bring your brand to life with a one of a kind masterpiece, built just for you." %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-stretch">
+                <div class="project-card text-center bg-info "><span>03</span>
+                    <h3>{% translate "Development:" %}</h3>
+                    <p class="mb-0">
+                        {% translate "We turn your ideas into a reality. Our website is placed on a 'development server' where you get to watch the whole process, live." %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex align-items-stretch">
+                <div class="project-card text-center"><span>04</span>
+                    <h3>{% translate "Support:" %}</h3>
+                    <p class="mb-0">
+                        {% translate "This is where you go live, to the world. Design, marketing, and maintenance; we'll be at your side for the life of your site." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="project-details-shots mb-80 mt-5"><img class="rounded" src="img/bg-img/p19.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+            <div class="section-heading text-center ">
+                <h2>{% translate "Our accountability" %}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-tools"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Work together to develop algorithms and flowcharts." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-danger bi bi-code-slash"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Produce clean, efficient code in accordance with the standards" %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-warning bi bi-box-fill"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Integrate third-party applications and software components." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-terminal"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Verify and deploy programs and systems." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-bug"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Troubleshoot, debug and upgrade existing software" %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-warning bi bi-gear"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Gather and evaluate user feedback." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-dander success bi bi-bug"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Execute suggested improvements." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+            <div class="card feature-card">
+                <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-bar-chart"></i>
+                    <div class="fea-text">
+                        <span>{% translate "Create technical documentation for reference and reporting." %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+{% endblock content %}

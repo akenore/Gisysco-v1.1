@@ -1,0 +1,89 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% get_current_language as language_code %}
+{% block title %}
+{% translate "contact" %}
+{% endblock title %}
+
+{% block content %}
+<div class="breadcrumb-wrapper breadcrumb-bg-light">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2 class="breadcrumb-title">{% translate "Hire us!" %}</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">{% translate "Home" %}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% translate "Contact" %}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="saasbox-contact-us-area">
+    <div class="container">
+        <div class="row g-4 justify-content-between">
+            <div class="col-12 col-lg-5 col-xl-4">
+                <div class="contact-side-info mb-4 mb-md-0">
+                    <h1 class="mb-3">{% translate "Let's talk about all things!" %}</h1>
+                    <p class="mb-4">
+                        {% translate "Write to us or give us a call. We will reply to you as soon as possible. But yes, it can take up to 24 hours." %}
+                    </p>
+                    <div class="contact-mini-card-wrapper">
+                        <div class="contact-mini-card">
+                            <div class="contact-mini-card-icon"><i class="bi bi-envelope"></i></div>
+                            <p>it-service@gisysco.com</p>
+                        </div>
+                        <div class="contact-mini-card">
+                            <div class="contact-mini-card-icon"><i class="bi bi-envelope"></i></div>
+                            <p>marketing@gisysco.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="contact-form">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-success" role="alert" id="msg">
+                                <span class="font-medium">{{message}}</span>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <label class="form-label" for="id_full_name">{{form.full_name.label}}</label>
+                                {{form.full_name}}
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label class="form-label" for="id_email">{% translate "Email Address:" %}</label>
+                                {{form.email}}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="id_subject">{% translate "Topics:" %}</label>
+                                {{form.topics}}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="id_message">{% translate "Message:" %}</label>
+                                {{form.message}}
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary w-100" type="submit">{% translate "Send Now" %}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="mb-120 d-block"></div>
+
+{% endblock content %}

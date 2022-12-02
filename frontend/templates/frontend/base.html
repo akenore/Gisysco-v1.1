@@ -1,0 +1,52 @@
+{% load static i18n %} 
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{{ language_code }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>Gisysco - {% block title %}{% endblock title %}</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'frontend/img/core-img/favicon.svg' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/all-css-libraries.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    {% block extraheader %} {% endblock extraheader %}
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">{% translate "Loading..." %}</span>
+      </div>
+    </div>
+
+    {% include 'frontend/header.html' %} 
+    {% block content %}{% endblock content %} 
+    {% include 'frontend/footer.html' %}
+
+    <script src="{% static 'frontend/js/all-js-libraries.js' %}"></script>
+    <script src="{% static 'frontend/js/active.js' %}"></script>
+    {% block extrajs %}{% endblock extrajs %}
+    <script>
+      setTimeout(() => {
+          const msg = document.getElementById('msg');
+          if(msg){
+              msg.style.display = 'none';
+          }
+          
+      }, 6000);
+  </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="32" height="32" fill="#fff"/>
+    <g id="Group_37" data-name="Group 37" transform="translate(-0.5 -0.5)">
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="16" cy="16" r="16" transform="translate(0.5 0.5)" fill="#fff"/>
+      <g id="Group_36" data-name="Group 36" transform="translate(6.251 6.694)">
+        <g id="Group_35" data-name="Group 35" transform="translate(0)">
+          <path id="Path_213" data-name="Path 213" d="M18,20.49a4.69,4.69,0,1,1-2.119-8.873V6.5a9.806,9.806,0,1,0,5.495,17.93A9.835,9.835,0,0,1,18,20.49Z" transform="translate(-6.071 -6.5)" fill="#00a9e9"/>
+          <path id="Path_214" data-name="Path 214" d="M24.244,20.184A9.764,9.764,0,0,0,25.181,16H21.673A4.689,4.689,0,0,0,24.244,20.184Z" transform="translate(-5.568 -6.194)" fill="#00a9e9"/>
+          <path id="Path_215" data-name="Path 215" d="M26.388,20.559a4.662,4.662,0,0,1-2.118-.506,9.851,9.851,0,0,1-3.375,3.94,9.758,9.758,0,0,0,5.494,1.683Z" transform="translate(-5.593 -6.063)" fill="#ed057f"/>
+          <path id="Path_216" data-name="Path 216" d="M20.224,16H16.716a9.764,9.764,0,0,0,.937,4.184A4.69,4.69,0,0,0,20.224,16Z" transform="translate(-5.728 -6.194)" fill="#ed057f"/>
+          <path id="Path_217" data-name="Path 217" d="M24.375,20.184A4.689,4.689,0,0,1,21.8,16H20.194a4.69,4.69,0,0,1-2.57,4.184A9.835,9.835,0,0,0,21,24.124,9.851,9.851,0,0,0,24.375,20.184Z" transform="translate(-5.698 -6.194)" fill="#00037f"/>
+        </g>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="2.086" cy="2.086" r="2.086" transform="translate(11.476 4.521)" fill="#ed057f"/>
+      </g>
+    </g>
+  </g>
+</svg>

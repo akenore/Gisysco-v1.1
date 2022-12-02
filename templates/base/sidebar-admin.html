@@ -1,0 +1,267 @@
+{% load static i18n %}
+{% block content %}
+
+<aside class="sticky left-0 top-0  hidden md:block w-64" aria-label="Sidebar">
+    <div class="h-screen overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+        <a href="{% url 'dashboard' %}" class="flex items-center pl-2.5 mb-5">
+            <!-- <img src="{% static 'backend/svg/logo-sm.svg' %}" class="mr-3 mt-1 h-6 sm:h-7" alt="Gisysco" /> -->
+            <span
+                class="self-center text-xl font-semibold whitespace-nowrap text-blue-900 dark:text-white">{% translate "MySpace" %}</span>
+        </a>
+        <ul class="space-y-2">
+            <li>
+                <a href="{% url 'customer-list' %}"
+                    class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg class="w-6 h-6 fill-current" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 86 86"
+                        style="enable-background:new 0 0 86 86;" xml:space="preserve">
+                        <g id="_x37_7_Essential_Icons_71_">
+                            <path id="Users" d="M71.2,51.2C74.1,48.8,76,45.1,76,41c0-6.9-5.6-13-12-13s-12,6.1-12,13c0,4.1,1.9,7.8,4.8,10.2
+                    c-1.3,0.5-2.5,1-3.7,1.7c-3.8-4.5-8.8-8-14.6-9.7C42.9,40.1,46,34.8,46,29c0-9.1-7.5-17-16-17s-16,7.9-16,17
+                    c0,5.8,3.1,11.1,7.5,14.2C9.1,46.9,0,58.4,0,72c0,1.1,0.9,2,2,2h82c1.1,0,2-0.9,2-2C86,62.4,79.8,54.2,71.2,51.2z M56,41
+                    c0-4.2,3.5-9,8-9s8,4.8,8,9s-3.5,9-8,9S56,45.2,56,41z M18,29c0-6.1,5.1-13,12-13s12,6.9,12,13s-5.1,13-12,13S18,35.1,18,29z
+                    M4.1,70c1-13.4,12.3-24,25.9-24c13.7,0,24.9,10.6,25.9,24H4.1z M59.9,70c-0.3-5-1.9-9.8-4.5-13.8C58,54.8,60.9,54,64,54
+                    c9.3,0,16.9,7,17.9,16H59.9z" />
+                        </g>
+                    </svg>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                        sidebar-toggle-item="Customers">{% translate "Customers" %}</span>
+                </a>
+            </li>
+            <li>
+                <button type="button"
+                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example1" data-collapse-toggle="dropdown-example1">
+                    <svg viewBox="0 0 22.191 22.18" class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g data-name="Layer 1" id="Layer_1-2">
+                                <path
+                                    d="M10.7,21.508.679,21.487V3.237a2.564,2.564,0,0,1,5.128,0,.336.336,0,0,0,.336.336H18.611V5.328a.336.336,0,1,0,.672,0V3.573h2.564a.336.336,0,0,0,.336-.336A3.239,3.239,0,0,0,18.947,0H3.243A3.3,3.3,0,0,0,.007,3.243c.005.408,0,18.566,0,18.61-.006.219.323.339.338.3L10.7,22.18A.336.336,0,0,0,10.7,21.508ZM18.947.676A2.567,2.567,0,0,1,21.489,2.9H6.462A3.234,3.234,0,0,0,5.216.676ZM9.953,6.824H7.539a.336.336,0,0,1,0-.672H9.953a.336.336,0,0,1,0,.672Zm-6.71-.672h2.5a.336.336,0,0,1,0,.672h-2.5A.336.336,0,0,1,3.243,6.152Zm18.94,6.221c.135,2.182-1.475,4.081-2.394,5.847a13.479,13.479,0,0,0-.475,3.627.336.336,0,0,1-.672-.006,13.68,13.68,0,0,1,.535-3.9A15.963,15.963,0,0,1,20.12,16.3a5.971,5.971,0,0,0-4.482-9.8,5.88,5.88,0,0,0-5.873,5.873,5.637,5.637,0,0,1-1.428,2.49.589.589,0,0,0-.174.389c.234.361,1.512.773,1.426.769a.338.338,0,0,1,.212.358,9.18,9.18,0,0,0-.026,2.233c.057.3.859.517,1.908.517a1.07,1.07,0,0,1,1.148,1.112v1.6a.336.336,0,0,1-.672,0v-1.6c0-.292-.16-.44-.476-.44-2.816-.006-2.779-1-2.578-3.252-.373-.174-1.583-.607-1.6-1.182a1.209,1.209,0,0,1,.322-.937,6.1,6.1,0,0,0,1.27-2.1,6.545,6.545,0,0,1,13.09.042ZM19.35,15.182a.335.335,0,0,0,0-.393L18.6,13.762l.014-.033,1.255-.2c.425-.1.3-.688.34-1.022-.044-.336.085-.917-.34-1.022l-1.255-.2-.013-.033.746-1.029c.259-.5-.709-1.137-1.051-1.447a.336.336,0,0,0-.394,0l-1.029.746-.033-.014-.2-1.254a.335.335,0,0,0-.276-.279,4.6,4.6,0,0,0-1.491,0,.335.335,0,0,0-.277.279l-.2,1.255-.033.014-1.029-.747a.336.336,0,0,0-.393,0c-.344.309-1.311.941-1.053,1.448l.747,1.026-.014.034-1.254.2c-.425.1-.3.688-.341,1.022.044.334-.084.918.341,1.022l1.254.2.014.033-.746,1.029c-.26.5.71,1.138,1.051,1.447a.338.338,0,0,0,.394,0l1.028-.747.034.014.2,1.255c.107.426.682.295,1.022.339.334-.044.918.086,1.022-.34l.2-1.255.033-.014,1.029.746C18.411,16.5,19.044,15.522,19.35,15.182Zm-1.255.363-.985-.714c-.223-.169-.452.049-.675.107-.319.053-.287.894-.418,1.469a4,4,0,0,1-.8,0c-.13-.573-.1-1.415-.416-1.468-.23-.06-.451-.278-.677-.108l-.985.714a3.884,3.884,0,0,1-.562-.563L13.3,14c.169-.223-.051-.453-.108-.675-.052-.319-.9-.287-1.468-.417a3.921,3.921,0,0,1,0-.8c.572-.13,1.415-.1,1.468-.417.057-.221.278-.454.107-.676l-.715-.984a3.891,3.891,0,0,1,.563-.563l.985.714c.223.167.454-.049.676-.108.319-.051.287-.893.418-1.468a3.985,3.985,0,0,1,.8,0c.13.572.1,1.414.417,1.468.231.06.449.277.676.108l.985-.715a3.942,3.942,0,0,1,.563.563l-.715.986c-.17.22.052.458.107.673.052.322.895.288,1.468.419a3.773,3.773,0,0,1,0,.8c-.574.131-1.415.1-1.468.419-.054.214-.277.455-.107.675l.715.984A3.891,3.891,0,0,1,18.1,15.545Zm-2.476-4.494a1.456,1.456,0,0,0,0,2.912A1.456,1.456,0,0,0,15.619,11.051Zm0,2.241a.785.785,0,0,1,0-1.569A.785.785,0,0,1,15.619,13.292ZM8.161,9.848H3.243a.336.336,0,1,1,0-.672H8.161a.336.336,0,1,1,0,.672Zm-.9,3.024H3.243a.336.336,0,0,1,0-.672H7.265a.336.336,0,0,1,0,.672ZM3.243,15.224H5.949a.336.336,0,0,1,0,.672H3.243A.336.336,0,0,1,3.243,15.224Zm0,3.024h4.3a.336.336,0,0,1,0,.672h-4.3A.336.336,0,0,1,3.243,18.248Z"
+                                    data-name="project management" id="project_management" />
+                            </g>
+                        </g>
+                    </svg>
+                    <path fill-rule="evenodd"
+                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                        sidebar-toggle-item="">{% translate "Projects" %}</span>
+                    <svg sidebar-toggle-item="" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <ul id="dropdown-example1" class="hidden py-2 space-y-2">
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                                </path>
+                            </svg>
+                            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                                sidebar-toggle-item="">{% translate "Add a project" %}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                </path>
+                            </svg>
+                            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                                sidebar-toggle-item="">{% translate "All projects" %}</span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center p-2 pl-10 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            aria-controls="dropdown-tasks" data-collapse-toggle="dropdown-tasks">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                                </path>
+                            </svg>
+                            <span class="flex-1 ml-2 text-left whitespace-nowrap"
+                                sidebar-toggle-item="">{% translate "Tasks" %}</span>
+                            <svg sidebar-toggle-item="" class="w-6 h-6 fill-current" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+
+                        </button>
+                        <ul id="dropdown-tasks" class="hidden py-2 space-y-2">
+                            <li>
+                                <a href=""
+                                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                                        </path>
+                                    </svg>
+                                    <span class="flex-1 ml-2 text-left whitespace-nowrap">
+                                        {% translate "Add a task" %}
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                        </path>
+                                    </svg>
+                                    <span class="flex-1 ml-2 text-left whitespace-nowrap">
+                                        {% translate "Check tasks" %}
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button"
+                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example3" data-collapse-toggle="dropdown-example3">
+                    <svg class="w-6 h-6 fill-current" id="Layer_1_1_" style="enable-background:new 0 0 64 64;"
+                        version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path
+                                d="M58,15h-3V6c0-2.757-2.243-5-5-5H14c-2.757,0-5,2.243-5,5v9H6c-2.757,0-5,2.243-5,5v32c0,2.757,2.243,5,5,5h13v4h-4v2h34   v-2h-4v-4h13c2.757,0,5-2.243,5-5V20C63,17.243,60.757,15,58,15z M11,6c0-1.654,1.346-3,3-3h36c1.654,0,3,1.346,3,3v26   c0,1.654-1.346,3-3,3H36v5.234L27.277,35H14c-1.654,0-3-1.346-3-3V6z M6,17h3v15c0,2.757,2.243,5,5,5h12.723L38,43.766V37h12   c2.757,0,5-2.243,5-5V17h3c1.654,0,3,1.346,3,3v27H3V20C3,18.346,4.346,17,6,17z M43,61H21v-4h22V61z M58,55H6   c-1.654,0-3-1.346-3-3v-3h58v3C61,53.654,59.654,55,58,55z" />
+                            <rect height="2" width="2" x="25" y="51" />
+                            <rect height="2" width="6" x="29" y="51" />
+                            <rect height="2" width="2" x="37" y="51" />
+                            <path
+                                d="M20,29h5V17h-2v-1c0-4.962,4.037-9,9-9s9,4.038,9,9v1h-2v12h2v1c0,0.551-0.448,1-1,1h-5.184c-0.414-1.161-1.514-2-2.816-2   c-1.654,0-3,1.346-3,3s1.346,3,3,3c1.302,0,2.402-0.839,2.816-2H40c1.654,0,3-1.346,3-3v-1h1c2.757,0,5-2.243,5-5v-2   c0-2.757-2.243-5-5-5h-1v-1c0-6.065-4.935-11-11-11S21,9.935,21,16v1h-1c-2.757,0-5,2.243-5,5v2C15,26.757,17.243,29,20,29z M32,33   c-0.552,0-1-0.449-1-1s0.448-1,1-1s1,0.449,1,1S32.552,33,32,33z M47,22v2c0,1.302-0.839,2.402-2,2.816V21h-2v6h-2v-8h3   C45.654,19,47,20.346,47,22z M17,22c0-1.654,1.346-3,3-3h3v8h-2v-6h-2v5.816c-1.161-0.414-2-1.514-2-2.816V22z" />
+                            <rect height="2" width="2" x="19" y="43" />
+                            <rect height="2" width="12" x="5" y="43" />
+                            <rect height="2" width="16" x="5" y="39" />
+                            <rect height="2" width="2" x="57" y="43" />
+                            <rect height="2" width="12" x="43" y="43" />
+                            <rect height="2" width="16" x="43" y="39" />
+                        </g>
+                    </svg>
+
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                        sidebar-toggle-item="">{% translate "Support" %}</span>
+                    <svg sidebar-toggle-item="" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <ul id="dropdown-example3" class="hidden py-2 space-y-2">
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "Marketing Form" %}</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "Marketing List" %}</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "Technical Form" %}</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "Technical List" %}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button"
+                    class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example4" data-collapse-toggle="dropdown-example4">
+                    <svg class="w-6 h-6 fill-current" height="8.4666mm"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        version="1.1" viewBox="0 0 846.66 846.66" width="8.4666mm" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <g id="Layer_x0020_1">
+                            <path class="fil0"
+                                d="M29 17.54l642.61 0c11.46,0 20.76,9.29 20.76,20.76l0 107.99c83,10.41 146.05,81.67 146.05,165.51l0 496.56c0,11.47 -9.3,20.76 -20.76,20.76l-788.66 0c-11.46,0 -20.75,-9.29 -20.75,-20.76l0 -770.06c0,-11.47 9.29,-20.76 20.75,-20.76zm20.76 695.95l601.09 0 0 -654.43 -601.09 0 0 654.43zm601.09 41.51l-601.09 0 0 32.6 601.09 0 0 -32.6zm-248.65 -316.58c-27.3,0 -27.3,-41.51 0,-41.51l164 0c27.31,0 27.31,41.51 0,41.51l-164 0zm0 137.02c-27.3,0 -27.3,-41.52 0,-41.52l164 0c27.31,0 27.31,41.52 0,41.52l-164 0zm0 -68.51c-27.3,0 -27.3,-41.52 0,-41.52l164 0c27.31,0 27.31,41.52 0,41.52l-164 0zm-267.79 -129.74l176.46 0c11.46,0 20.75,9.29 20.75,20.75l0 176.46c0,11.46 -9.29,20.76 -20.75,20.76l-176.46 0c-11.46,0 -20.76,-9.3 -20.76,-20.76l0 -176.46c0,-11.46 9.3,-20.75 20.76,-20.75zm155.7 41.51l-134.94 0 0 134.94 134.94 0 0 -134.94zm402.26 -230.45l0 599.35 104.53 0 0 -475.8c0,-60.96 -44.61,-113.43 -104.53,-123.55zm-531.66 -77.77l379.19 0c11.46,0 20.76,9.29 20.76,20.76l0 167.29c0,11.46 -9.3,20.75 -20.76,20.75l-379.19 0c-11.46,0 -20.75,-9.29 -20.75,-20.75l0 -167.29c0,-11.47 9.29,-20.76 20.75,-20.76zm358.43 41.51l-337.67 0 0 125.78 337.67 0 0 -125.78z" />
+                        </g>
+                    </svg>
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                        sidebar-toggle-item="">{% translate "Articles" %}</span>
+                    <svg sidebar-toggle-item="" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <ul id="dropdown-example4" class="hidden py-2 space-y-2">
+                    <li>
+                        <a href="{% url 'post-admin-list' %}"
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "All Articles" %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'post-add' %}"
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            {% translate "New Post" %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'category-add' %}"
+                            class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">{% translate "Categories" %}
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="{% url 'page-list' %}"
+                    class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" fill="none"
+                        stroke="currentColor" viewBox="0 0 59.858 63">
+                        <g id="icons8-bookmark-documents-64-_1_" transform="translate(-2.057 63)">
+                            <path id="Path_210" data-name="Path 210"
+                                d="M3.9-61.3C2-59.1,1.3-3.6,3.1-1.4,4-.3,8.4,0,26,0,50.3,0,53.3-.5,54.9-5.2c1.4-4.1,1.5-43.7,0-47.5a8.418,8.418,0,0,0-2.2-3.5c-.7-.4-6.1-.8-12-.8-8.3,0-10.8.3-10.5,1.2S34-54.3,41.1-54l10.4.5.3,24c.2,21.7.1,24.1-1.5,25.2-1.2,1-7.5,1.3-23,1.3H6V-60H29.8c23.6,0,23.9,0,26,2.3,2.1,2.2,2.2,3.3,2.4,26.7.3,21,.5,24.5,1.8,24.5s1.5-3,1.8-20c.4-25.7-.1-29.6-3.9-33.5l-3.1-3H30C8.2-63,5.1-62.8,3.9-61.3Z" />
+                            <path id="Path_211" data-name="Path 211"
+                                d="M10.3-51.2c.8,7.4,4.4,17.2,6.2,17.2.8,0,2.2-1.5,3.1-3.3.9-1.7,1.7-3.3,1.8-3.4.1-.2,1.7.2,3.6.7,4.5,1.3,5.1.6,3.3-3.8A46.617,46.617,0,0,1,26.1-52l-.6-4.5-7.9-.3-7.9-.3Z" />
+                            <path id="Path_212" data-name="Path 212"
+                                d="M13-24.5c0,1.3,2.3,1.5,15,1.5s15-.2,15-1.5S40.7-26,28-26,13-25.8,13-24.5Z" />
+                            <path id="Path_213" data-name="Path 213"
+                                d="M13-14.5c0,1.2,1.8,1.5,10,1.5s10-.3,10-1.5S31.2-16,23-16,13-15.7,13-14.5Z" />
+                        </g>
+                    </svg>
+
+                    <span class="flex-1 ml-3 whitespace-nowrap">{% translate "Pages" %}</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</aside>
+
+{% endblock content %}

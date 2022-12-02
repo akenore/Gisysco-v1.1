@@ -1,0 +1,579 @@
+{% extends 'frontend/base.html' %}
+{% load static i18n %}
+{% block title %} {% trans "Home" %}{% endblock title %}
+
+
+{% block content %}
+
+<div class="welcome-area hero4">
+    <div class="hero4-bg-shape"><img src="{% static 'frontend/img/core-img/hero-4.png' %}" alt=""></div>
+    <div class="hero4-bg-shape2"><img src="{% static 'frontend/img/core-img/hero-4-2.png' %}" alt=""></div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="welcome-content">
+                    <div class="hero4-slide-controls">
+                        <div class="hero4-1-slide-wrap">
+                            <div class="single-hero-slide">
+                                <h2>{% translate "Design & Branding" %}</h2>
+                                <p class="mb-4">
+                                    {% translate "We take great care while designing the UI/UX user interface to ensure that it is appealing, practical, and simple to use. Our designers collaborate closely with the marketing team to create an appealing and well-referenced design that captures your company's identity and values for our complete digital platform." %}
+                                </p>
+                                <a class="btn btn-warning" href="{% url 'design' %}">{% translate "Get More" %}</a>
+                            </div>
+                            <div class="single-hero-slide">
+                                <h2>{% translate "Web Development" %}</h2>
+                                <p class="mb-4">
+                                    {% translate "We study your needs as well the feasibility of your wishes with intelligent and efficient means to meet all your requirements. Our team takes care of the development of your web platform by respecting your criteria and vision." %}
+                                </p>
+                                <a class="btn btn-info" href="{% url 'web' %}">{% translate "Get More" %}</a>
+                            </div>
+                            <div class="single-hero-slide">
+                                <h2>{% translate "Mobile Development" %}</h2>
+                                <p class="mb-4">
+                                    {% translate "Our team takes care of your iOS and Android applications. We study your needs for adequate solutions. We will also take care of API development and the design of best practices for mobile application coding." %}
+                                </p>
+                                <a class="btn btn-primary" href="{% url 'mobile' %}">{% translate "Get More" %}</a>
+                            </div>
+                            <div class="single-hero-slide">
+                                <h2>{% translate "Powerful SEO & business service." %}</h2>
+                                <p class="mb-4">
+                                    {% translate "Several parameters are to be taken into account for a website to have good referencing for that our team supports the analysis and the follow-up of SEO referencing - Search Engine Optimization." %}
+                                </p>
+                                <a class="btn btn-info" href="{% url 'seo' %}">{% translate "Get More" %}</a>
+                            </div>
+                            <div class="single-hero-slide">
+                                <h2>{% translate "Marketing" %}</h2>
+                                <p class="mb-4">
+                                    {% translate "Where will your highest ROI be tomorrow, next month, and next year? We’ll help you assess your online marketing strategy as well as your campaigns and advise you on a plan that ensures you stay competitive in the long run." %}
+                                </p>
+                                <a class="btn btn-warning" href="{% url 'marketing' %}">{% translate "Get More" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6">
+                <div class="welcome-thumb ms-5">
+                    <div class="hero-video-card"><a class="video-play-btn play-button"
+                            href="https://www.youtube.com/watch?v=3qyhgV0Zew0"><i class="bi bi-play"></i><span
+                                class="video-sonar"></span></a>
+                        <div class="video-shape"><img src="{% static 'frontend/img/core-img/hero-3-2.png' %}" alt="">
+                        </div>
+                        <div class="video-card-slides hero4-2-slide-wrap">
+                            <div class="rounded"><img class="rounded" src=" {% static 'frontend/img/bg-img/9.jpg' %}"
+                                    alt=""></div>
+                            <div class="rounded"><img class="rounded" src="{% static 'frontend/img/bg-img/10.jpg' %}"
+                                    alt=""></div>
+                            <div class="rounded"><img class="rounded" src="{% static 'frontend/img/bg-img/11.jpg' %}"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+
+<div class="mb-120 d-block"></div>
+<div class="cool-facts-wrapper">
+    <div class="cta-background-image"><img src="{% static 'frontend/img/core-img/wm.png' %}" alt=""></div>
+    <div class="circle-animation">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="service-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+                <div class="section-heading text-center">
+                    <h6>{% trans "10 years experienced" %}</h6>
+                    <h2>{% trans "We provide the best services." %}</h2>
+                    <p>{% translate "All of our teams are free to express their creativity and anticipate new difficulties thanks to our dedication to fostering a positive work environment. They do this by suggesting creative solutions using the newest design trends and coding with all contemporary techniques." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+<div class="feature-area bg-primary pt-120 pb-120">
+    <div class="background-shape wow fadeInLeftBig" data-wow-duration="4000ms"></div>
+    <div class="curve-shape-top"></div>
+    <div class="curve-shape-bottom"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+                <div class="section-heading text-center white">
+
+                    <h2>{% translate "See our top recommendations for our services." %}</h2>
+                    <p>{% translate "We have been around since 2012, have seen the advent of new mobile technologies, and we bring our excitement and ingenuity to bear on putting effective ideas into practice." %}
+                    </p>
+                    <p>{% translate "We offer our services, check out our best solutions." %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-file-earmark-code"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Web solutions" %}</h6>
+                            <span>{% translate "program distributed over a network." %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-success bi bi-phone"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Mobile Solution" %}</h6>
+                            <span>{% translate "Solution for Android and iOS applications" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-cart4"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "E-commerce solutions" %}</h6>
+                            <span>{% translate "Create and profit" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-danger bi bi-brush"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Design UI/UX" %}</h6>
+                            <span>{% translate "Development of UI and UX design." %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-warning bi bi-cloud-fill"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Hosting & clouding" %}</h6>
+                            <span>{% translate "Hosting solutions for everyone" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-success bi bi-bug"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Fixed Bugs" %}</h6><span>{% translate "Unlimited bug fix" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-info bi bi-bar-chart"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Digital Marketing & SEO" %}</h6>
+                            <span>{% translate "Boost your sales" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-danger bi bi-gear-wide-connected"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Digital transformation" %}</h6>
+                            <span>{% translate "Modernize corporate IT systems" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body d-flex align-items-center"><i class="bg-primary bi bi-chat-left-dots"></i>
+                        <div class="fea-text">
+                            <h6>{% translate "Live Support Help" %}</h6><span>{% translate "Support 24h a day" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+<div class="saasbox-tab-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+                <div class="section-heading text-center">
+                    <h6>{% translate "Awarded Company" %}</h6>
+                    <h2>{% translate "Awesome stunning smart & dynamic feature for your website." %}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="tab--area">
+                    <ul class="nav nav-tabs" id="saasboxTab" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="tab--1" data-bs-toggle="tab" href="#tab1"
+                                role="tab" aria-controls="tab1" aria-selected="true">Design & Branding</a></li>
+                        <li class="nav-item"><a class="nav-link" id="tab--2" data-bs-toggle="tab" href="#tab2"
+                                role="tab" aria-controls="tab2" aria-selected="false">Development Web & Mobile</a></li>
+                        <li class="nav-item"><a class="nav-link" id="tab--3" data-bs-toggle="tab" href="#tab3"
+                                role="tab" aria-controls="tab3" aria-selected="false">Digital Marketing & SEO</a></li>
+                    </ul>
+                    <div class="tab-content" id="saasboxTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h6>{% translate "Design & Branding" %}</h6>
+                                        <h2 class="mb-3">{% translate "We provide best design & branding solution." %}
+                                        </h2>
+                                        <p>{% translate "The visitor must want to browse your site, so you must have an excellent and distinctive design for it." %}
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="alert-info bi bi-check"></i>Adobe Illustrator</li>
+                                            <li><i class="alert-info bi bi-check"></i>Photoshop</li>
+                                            <li><i class="alert-info bi bi-check"></i>CorelDRAW</li>
+                                            <li><i class="alert-info bi bi-check"></i>Affinity Designer</li>
+                                        </ul>
+                                        <div class="progress mt-4">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%;"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div><span
+                                            class="d-block fz-12">{% translate "Clients satisfaction rate: 98%" %}</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5 ms-lg-5"><img
+                                            src="{% static 'frontend/img/illustrator/gisysco01.svg' %}" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h6>{% translate "Development Web & Mobile" %}</h6>
+                                        <h2 class="mb-3">{% translate "We offer web & mobile development services." %}
+                                        </h2>
+                                        <p>{% translate "With passion and enthusiasm, our developers create the best web and mobile applications for you." %}
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="alert-info bi bi-check"></i>JavaScript</li>
+                                            <li><i class="alert-info bi bi-check"></i>Django</li>
+                                            <li><i class="alert-info bi bi-check"></i>Flutter</li>
+                                            <li><i class="alert-info bi bi-check"></i>TailwindCSS</li>
+                                            <li><i class="alert-info bi bi-check"></i>Bootstrap 5</li>
+                                        </ul>
+                                        <div class="progress mt-4">
+                                            <div class="progress-bar" role="progressbar" style="width: 99.9%;"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div><span
+                                            class="d-block fz-12">{% translate "Clients satisfaction rate: 99.9%" %}</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5 ms-lg-5"><img
+                                            src="{% static 'frontend/img/illustrator/gisysco02.svg' %}" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab--text mt-3 mt-lg-5">
+                                        <h6>{% translate "Digital Marketing & SEO" %}</h6>
+                                        <h2 class="mb-3">
+                                            {% translate "We offer innovative SEO and digital marketing solutions." %}
+                                        </h2>
+                                        <p>{% translate "Our digital marketing consultants provide you with creative advice, optimize your website for search engines (SEO), and raise your rank in search engine results." %}
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li><i
+                                                    class="alert-info bi bi-check"></i>{% translate "Customer Relationship Management (CRM)" %}
+                                            </li>
+                                            <li><i
+                                                    class="alert-info bi bi-check"></i>{% translate "Content Management Systems (CMS)" %}
+                                            </li>
+                                            <li><i
+                                                    class="alert-info bi bi-check"></i>{% translate "Digital Asset Management Platforms (DAM)" %}
+                                            </li>
+                                            <li><i
+                                                    class="alert-info bi bi-check"></i>{% translate "Search Analytics Providers (Google and alt sources)" %}
+                                            </li>
+                                        </ul>
+                                        <div class="progress mt-4">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%;"
+                                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div><span
+                                            class="d-block fz-12">{% translate "Clients satisfaction rate: 98%" %}</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-6">
+                                    <div class="tab-thumb mt-5 ms-lg-5"><img
+                                            src="{% static 'frontend/img/illustrator/gisysco03.svg' %}" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-120 d-block"></div>
+
+<div class="client-feedback-area bg-gray pt-120 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-9 col-md-8 col-lg-7">
+                <div class="section-heading text-center">
+                    <h6>{% translate "Testimonials" %}</h6>
+                    <h2>{% translate "Read some reviews from our beloved clients about our work." %}</h2>
+                    <p>{% translate "Listening to our customers is essential for the continuity of our relations and the optimization of our services. Here are some reviews." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="client-feedback-content">
+            <div class="client-feedback-slides">
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">EDICT</h6>
+                                    <p class="mb-0 fz-12">@edict.fr</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Une équipe sympa, très à l'écoute et prennent le temps de
+                                vous faire découvrir tous les choix que vous avez.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">WIBIM</h6>
+                                    <p class="mb-0 fz-12">@wibim.fr</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Nous vous remercions pour cette collaboration, durant ces
+                                derniers mois nous avons eux des résultats concrets et une nette amélioration sur notre
+                                activité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">ATROIS</h6>
+                                    <p class="mb-0 fz-12">@atrois.fr</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Nous avons décidé de faire confiance à la société Gisysco
+                                ,et nous sommes pleinement satisfaits de la solution personnalisée, proposée par leurs
+                                équipesé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">SIOBOIS</h6>
+                                    <p class="mb-0 fz-12">@siobois.com</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Les membres de l'équipe sont très professionnels. A
+                                l'écoute et de bons conseils je les recommande vivemené.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">STRAKON_FR</h6>
+                                    <p class="mb-0 fz-12">@strakon.fr</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Une équipe très professionnels. A l'écoute et de bon
+                                conseil je vous les recommande fortemené.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card feedback-card border-0 p-2 shadow-sm">
+                        <div class="card-body p-5 p-sm-4 p-md-5">
+                            <div class="client-info d-flex align-items-center">
+                                <div class="client-thumb rounded-circle me-2 position-relative"><img
+                                        class="rounded-circle" src="{% static 'frontend/img/bg-img/user.png' %}"
+                                        alt=""><span class="rounded-circle"><i class="bi bi-check"></i></span></div>
+                                <div class="client-name">
+                                    <h6 class="fz-14 mb-0">OPFIELD</h6>
+                                    <p class="mb-0 fz-12">@opfield.com</p>
+                                </div>
+                            </div>
+                            <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-dark mb-0 fw-bold">Travaille effectuer dans les délais Je vous recommande
+                                merci encore pour ce professionnalismé.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="partner-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2 class="mb-0">{% translate "Trusted and used by many companies." %}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="partner-wrapper">
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/edict.png' %}" alt=""></div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/atrois.png' %}" alt="">
+            </div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/c2it.png' %}" alt=""></div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/opfield.png' %}" alt="">
+            </div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/wibim.png' %}" alt=""></div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/siobois.png' %}" alt="">
+            </div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/strakon.png' %}" alt="">
+            </div>
+            <div class="partner-logo px-sm-3"><img src="{% static 'frontend/img/partner-img/weatlo.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="saasbox-news-area">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <div class="section-heading">
+                    <h6>{% translate "Latest Blog's" %}</h6>
+                    <h2>{% translate "Our Latest News" %}</h2>
+                    <p>{% translate "Here are some tips to help you with sponsorship and other issues." %}</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6">
+                <div class="text-sm-end"><a class="btn btn-warning mb-80" href="#">{% translate "View All News" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center g-4 g-md-5 g-lg-4 g-xl-5">
+            {% for article in article_list %}
+            <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                <div class="card blog-card border-0">
+                    <div class="image-wrap"><a class="d-block" href="{{article.get_absolute_url}}" target="_blank"><img
+                                src="{{article.FeatureImage.url}}" alt="{{article.Title}}"></a></div>
+                    <div class="card-body p-4 pb-2">
+                        <div class="post-meta d-flex align-items-center justify-content-between mb-3"><span
+                                class="fz-14"><i
+                                    class="me-1 bi bi-calendar"></i>{{article.CreatedDate|date:"Y M d"}}</span><span
+                                class="fz-14"><i class="me-1 bi bi-clock"></i>{{article.CreatedDate|timesince}}</span>
+                        </div><a class="post-title d-block mb-3" href="blog-details-1.html">{{article.Title}}</a>
+                        <p>{{article.Content|safe}}</p><a class="btn btn-primary btn-minimal"
+                            href="{{article.get_absolute_url}}"
+                            target="_blank">{% translate "Continue reading..." %}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+<div class="cta-area pt-120 pb-120 bg-img bg-fixed bg-overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-10 col-md-8">
+                <div class="cta-text">
+                    <h2 class="mb-4 mb-lg-5 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                        {% translate "Create a stunning website quickly and effortlessly." %}</h2>
+                    <a class="btn btn-warning wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"
+                        href="{% url 'contact' %}">{% translate "Get started now" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-120 d-block"></div>
+{% endblock content %}
